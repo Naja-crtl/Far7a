@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="weddingapp"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MyApplication">
+        <activity
+                android:name=".categories"
+                android:exported="false"/>
+        <activity
+                android:name=".favorites"
+                android:exported="false"/>
+        <activity
+                android:name=".budget"
+                android:exported="false"/>
+        <activity
+                android:name=".profile"
+                android:exported="false"/>
+        <activity
+                android:name=".myevents"
+                android:exported="false"/>
+        <activity
+                android:name=".flourist"
+                android:exported="false"/>
+        <activity
+                android:name=".makeup"
+                android:exported="false"/>
+        <activity
+                android:name=".suits"
+                android:exported="false"/>
+        <activity
+                android:name=".dresses"
+                android:exported="false"/>
+        <activity
+                android:name=".photographer"
+                android:exported="false"/>
+        <activity
+                android:name=".catering"
+                android:exported="false"/>
+        <activity
+                android:name=".venues"
+                android:exported="false"/>
+        <activity
+                android:name=".home_page"
+                android:exported="false"/>
+        <activity
+                android:name=".couplenames"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

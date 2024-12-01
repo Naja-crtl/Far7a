@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/date"
+        android:gravity="center">
+
+    <!-- Heading -->
+    <TextView
+            android:id="@+id/tvProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Your Profile"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    <!-- Edit Partner 1 Name -->
+    <EditText
+            android:id="@+id/etPartner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Partner 1 Name"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
+
+    <!-- Edit Partner 2 Name -->
+    <EditText
+            android:id="@+id/etPartner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Partner 2 Name"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
+
+    <!-- Wedding Date -->
+    <Button
+            android:id="@+id/btnWeddingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/black"
+            android:text="Select Wedding Date"
+            android:textSize="18sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/white" />
+
+    <!-- Email -->
+    <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginBottom="20dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
+
+    <!-- Save Button -->
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="cursive"
+            android:text="Save Profile"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+</LinearLayout>

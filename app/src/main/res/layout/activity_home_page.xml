@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".home_page"
+        android:background="@drawable/homepagebackground">
+
+    <!-- Main Content -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <!-- Top Bar with Menu Button -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+            <!-- Menu Button -->
+            <ImageButton
+                    android:id="@+id/btnMenu"
+                    android:layout_width="36dp"
+                    android:layout_height="34dp"
+                    android:src="@android:drawable/ic_menu_agenda"
+                    android:background="@null"
+                    android:contentDescription="Menu Button"
+                    android:layout_gravity="start|center_vertical"/>
+
+            <!-- Welcome Message -->
+            <TextView
+                    android:id="@+id/tvCoupleNames"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:background="@color/cardview_light_background"/>
+        </LinearLayout>
+
+        <!-- Countdown Timer -->
+        <TextView
+                android:id="@+id/tvCountdown"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:textSize="24sp"
+                android:scaleType="centerCrop"
+                android:textColor="@color/white"
+                android:background="@drawable/cd_background"
+                android:gravity="center"
+        />
+
+        <!-- Search Bar -->
+        <SearchView
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="8dp"
+                android:queryHint="Search for services..."
+                app:iconifiedByDefault="false" />
+
+        <!-- Grid Section for Categories -->
+        <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="3"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+            <!-- Category Item: Venues -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    style="@style/CardStyle">
+                <ImageView
+                        android:id="@+id/venuesImage"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/venues"
+                        android:contentDescription="Venues" />
+                <TextView
+                        android:id="@+id/venuesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venues"
+                        android:textColor="@color/black"
+                        android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Category Item: Photographer -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    style="@style/CardStyle">
+                <ImageView
+                        android:id="@+id/photographerImage"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/photographer"
+                        android:contentDescription="Photographer" />
+                <TextView
+                        android:id="@+id/photographerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Photographer"
+                        android:textColor="@color/black"
+                        android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Category Item: MakeUp -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    style="@style/CardStyle">
+                <ImageView
+                        android:id="@+id/makeupImage"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/makeup"
+                        android:contentDescription="MakeUp" />
+                <TextView
+                        android:id="@+id/makeupText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MakeUp"
+                        android:textColor="@color/black"
+                        android:gravity="center" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Second Grid Section for Categories -->
+        <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="3"
+                android:padding="20dp">
+
+            <!-- Category Item: Dresses -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    style="@style/CardStyle">
+                <ImageView
+                        android:id="@+id/dressImage"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/dress"
+                        android:contentDescription="Bride Dresses" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dresses"
+                        android:textColor="@color/black"
+                        android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Category Item: Suits -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    style="@style/CardStyle">
+                <ImageView
+                        android:id="@+id/suitsImage"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/suits"
+                        android:contentDescription="Groom Suits" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suits"
+                        android:textColor="@color/black"
+                        android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Category Item: Flourist -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    style="@style/CardStyle">
+                <ImageView
+                        android:id="@+id/flouristImage"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/flourist"
+                        android:contentDescription="Flourist" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flourist"
+                        android:textColor="@color/black"
+                        android:gravity="center" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- View All Button -->
+        <Button
+                android:id="@+id/btn_viewAll"
+                android:layout_width="140dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:text="VIEW ALL">
+        </Button>
+
+        <!-- Bottom NavBar to switch between pages -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:menu="@menu/bottom_nav_menu"
+                android:background="@color/white" />
+    </LinearLayout>
+
+    <!-- Side Navigation Menu -->
+    <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/navigation_menu"
+            app:headerLayout="@layout/navigation_header" />
+</androidx.drawerlayout.widget.DrawerLayout>

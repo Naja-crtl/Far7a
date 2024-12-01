@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root LinearLayout -->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".categories"
+        android:background="@drawable/categories_background">
+
+    <!-- First GridLayout -->
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="3"
+            android:padding="15dp"
+            android:layout_gravity="center">
+
+        <!-- Category Item: Venues -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/venuesImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/venues"
+                    android:contentDescription="Venues" />
+            <TextView
+                    android:id="@+id/venuesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Venues"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Category Item: Photographer -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/photographerImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/photographer"
+                    android:contentDescription="Photographer" />
+            <TextView
+                    android:id="@+id/photographerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photographer"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Category Item: Makeup -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/makeupImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/makeup"
+                    android:contentDescription="MakeUp" />
+            <TextView
+                    android:id="@+id/makeupText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MakeUp"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Second GridLayout -->
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="3"
+            android:padding="15dp">
+
+        <!-- Category Item: Dresses -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/dressImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dress"
+                    android:contentDescription="Bride Dresses" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dresses"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Category Item: Suits -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/suitsImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/suits"
+                    android:contentDescription="Groom Suits" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suits"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Category Item: Florist -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/flouristImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/flourist"
+                    android:contentDescription="Florist" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Florist"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Third GridLayout -->
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="3"
+            android:padding="15dp"
+            android:layout_gravity="center">
+
+        <!-- Category Item: Catering -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/cateringImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/catering"
+                    android:contentDescription="Catering" />
+            <TextView
+                    android:id="@+id/cateringText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catering"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Category Item: Zaffe -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/zaffeImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/zaffe"
+                    android:contentDescription="Zaffe" />
+            <TextView
+                    android:id="@+id/zaffeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zaffe"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Category Item: Car Rental -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/car_rentalImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/car_rental"
+                    android:contentDescription="Car Rental" />
+            <TextView
+                    android:id="@+id/car_rentalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car Rental"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Fourth GridLayout -->
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="3"
+            android:padding="15dp">
+
+        <!-- Category Item: Bands -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/bandsImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bands"
+                    android:contentDescription="Bands and DJs" />
+            <TextView
+                    android:id="@+id/bandText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Category Item: Hair Dresser -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/hairDresserImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/hairdresser_w"
+                    android:contentDescription="Hair Dresser" />
+            <TextView
+                    android:id="@+id/hairDresserText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hair Dresser"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Category Item: Jewelry -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                style="@style/CardStyle">
+            <ImageView
+                    android:id="@+id/jewelsImage"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/jewels"
+                    android:contentDescription="Jewelry" />
+            <TextView
+                    android:id="@+id/jewelsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jewelry"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:menu="@menu/bottom_nav_menu"
+            android:background="@color/white" />
+</LinearLayout>

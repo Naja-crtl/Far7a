@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="country_codes">
+        <item>Lebanon +961</item>
+        <item>US +1</item>
+    </string-array>
+</resources>
